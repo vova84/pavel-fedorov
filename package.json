@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-rename": "*",
+    "tiny-lr": "*",
+    "gulp-sass": "*",
+    "gulp-livereload": "*",
+    "gulp-notify": "*",
+    "gulp-concat": "*",
+    "gulp-autoprefixer":"*",
+    "gulp-minify-css":"*",
+    "gulp-uglify": "*",
+    "gulp-imagemin": "*",
+    "gulp-processhtml": "*",
+    "gulp-embedlr": "*"
+  }
+}
