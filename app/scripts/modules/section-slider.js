@@ -2,11 +2,28 @@
 
 APP.Effects.sectionSlider = ({
     switcher: $('#slider-block-arrow'),
+    hideIntro: function () {
+        setTimeout(function () {
+            $('body').addClass('top-hide');
+        }, 800);
+    },
     init: function () {
-        this.switcher.click(function () {
-            $('html, body').animate({
-                scrollTop: $('.top').height() // need live collection
-            }, 700);
+        var isScrolled = false,
+            self = this;
+
+        $('.touch-nav').on('touchstart', function () {
+            self.hideIntro();
+        });
+
+        self.switcher.click(function () {
+            self.hideIntro();
+        });
+
+        $('.top').on('mousewheel DOMMouseScroll', function () {
+            if(!isScrolled) {
+                self.hideIntro();
+                return false;
+            }
         });
     }
 }).init();

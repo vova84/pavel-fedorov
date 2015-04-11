@@ -52,7 +52,7 @@ gulp.task('scss', function() {
 
 //remove comments and livereload scripts from output html files -  gulp-processhtml
 gulp.task('processHTML', function() {
-    return gulp.src('./app/*.php')
+    return gulp.src('./app/*.html')
         .pipe(processhtml())
         .pipe(gulp.dest('./dist/'));
 });
@@ -76,9 +76,10 @@ gulp.task('images', function() {
 });
 
 // Html
-gulp.task('php', function() {
-    return gulp.src("app/**/*.php")
+gulp.task('html', function() {
+    return gulp.src("app/**/*.html")
         .pipe(embedlr())
+
         .pipe(livereload());
 });
 
@@ -97,7 +98,7 @@ gulp.task('watch', function() {
     // Watch .js files
     gulp.watch('app/scripts/**/*.js', ['scripts']);
 
-    gulp.watch('app/**/*.php', ['php']);
+    gulp.watch('app/**/*.html', ['html']);
 
 });
 
