@@ -266,6 +266,7 @@ $mfp-use-visuallyhidden:              false !default; // Hide content from brows
 }
 .thumb-link{
   display: inline-block;
+  vertical-align: middle;
   height: 25px;
   width: 25px;
   background: url("../images/thumb-icon.png") 0 0 no-repeat;
@@ -289,6 +290,7 @@ $mfp-use-visuallyhidden:              false !default; // Hide content from brows
 button {
   &.mfp-close,
   &.mfp-arrow {
+    vertical-align: middle;
     overflow: visible;
     cursor: pointer;
     background: transparent;

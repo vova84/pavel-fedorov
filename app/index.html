@@ -59,20 +59,26 @@
         <div class="row photo-block">
             <div class="category-line"></div>
             <nav class="category">
-                <a href="#">Свадьбы<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
-                <a href="#">Праздники<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
-                <a href="#">Семейные фото<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
-                <a class="active" href="#">Все работы<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
-                <a href="#">Портреты<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
-                <a href="#">Пейзажы<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
-                <a href="#">Красота<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+                <a data-filter=".weddings" class="filter" href="#">Свадьбы<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+
+                <a data-filter=".holidays" class="filter" href="#">Праздники<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+
+                <a data-filter=".photos" class="filter" href="#">Семейные фото<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+
+                <a data-filter="all" class="filter active" href="#">Все работы<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+
+                <a data-filter=".portraits" class="filter" href="#">Портреты<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+
+                <a  data-filter=".landscapes" class="filter" href="#">Пейзажы<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
+
+                <a data-filter=".beautiful" class="filter" href="#">Красота<span class="triangle-down"></span><span class="triangle-shadow"></span></a>
             </nav>
-            <div class="category-view clearfix centered">
+            <div id="mixContainer" class="category-view clearfix centered">
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="weddings mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
 
                     <figure class="single-photo">
-                        <img src="images/pic-1.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-1.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -89,31 +95,24 @@
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
                         </li>
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
+                            <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
                         </li>
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
+                            <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
                         </li>
                     </ul>
 
                 </div>
 
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="beautiful mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-2.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-1.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
                                 <span class="divider"></span>
-                                <div class="name animated">Евгений и Олеся</div>
+                                <div class="name animated">Евгений и Даша</div>
                             </div>
                             <div class="overlay-photo"></div>
                         </figcaption>
@@ -122,26 +121,13 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="beautiful mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-3.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-3.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -155,26 +141,13 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-4.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-4.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -188,26 +161,13 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-5.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-5.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -221,26 +181,13 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="weddings mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-6.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-6.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -254,26 +201,13 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-7.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-7.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -287,26 +221,13 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="beautiful mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-8.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-8.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -321,25 +242,48 @@
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
                         </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
 
+                    </ul>
+                </div>
+
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                    <figure class="single-photo">
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-9.jpg" alt=""/>
+                        <figcaption>
+                            <div class="figcaption-content">
+                                <div class="date animated">Июль / 2014</div>
+                                <span class="divider"></span>
+                                <div class="name animated">Евгений и Олеся</div>
+                            </div>
+                            <div class="overlay-photo"></div>
+                        </figcaption>
+
+                    </figure>
+                </div>
+
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                    <figure class="single-photo">
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-10.jpg" alt=""/>
+                        <figcaption>
+                            <div class="figcaption-content">
+                                <div class="date animated">Июль / 2014</div>
+                                <span class="divider"></span>
+                                <div class="name animated">Евгений и Олеся</div>
+                            </div>
+                            <div class="overlay-photo"></div>
+                        </figcaption>
+
+                    </figure>
+                    <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
+                            <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-9.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-11.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -352,9 +296,9 @@
                     </figure>
                 </div>
 
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
+                <div class="mix col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                     <figure class="single-photo">
-                        <img src="images/pic-10.jpg" alt=""/>
+                        <img src="images/loading.gif" class="lazy-hidden" data-src="images/pic-12.jpg" alt=""/>
                         <figcaption>
                             <div class="figcaption-content">
                                 <div class="date animated">Июль / 2014</div>
@@ -368,67 +312,6 @@
                     <ul class="gallery-inner hide">
                         <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
                             <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                    <figure class="single-photo">
-                        <img src="images/pic-11.jpg" alt=""/>
-                        <figcaption>
-                            <div class="figcaption-content">
-                                <div class="date animated">Июль / 2014</div>
-                                <span class="divider"></span>
-                                <div class="name animated">Евгений и Олеся</div>
-                            </div>
-                            <div class="overlay-photo"></div>
-                        </figcaption>
-
-                    </figure>
-                </div>
-
-                <div class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                    <figure class="single-photo">
-                        <img src="images/pic-12.jpg" alt=""/>
-                        <figcaption>
-                            <div class="figcaption-content">
-                                <div class="date animated">Июль / 2014</div>
-                                <span class="divider"></span>
-                                <div class="name animated">Евгений и Олеся</div>
-                            </div>
-                            <div class="overlay-photo"></div>
-                        </figcaption>
-
-                    </figure>
-                    <ul class="gallery-inner hide">
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-1.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-3.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
-                        </li>
-                        <li class="col-24 col-12-ex-sm col-8-sm col-6-md gallery">
-                            <a href="images/big-pic-1.jpg"><img src="images/pic-4.jpg" alt=""/></a>
                         </li>
                     </ul>
                 </div>

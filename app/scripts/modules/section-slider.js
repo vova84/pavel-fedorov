@@ -5,11 +5,14 @@ APP.Effects.sectionSlider = ({
     hideIntro: function () {
         setTimeout(function () {
             $('body').addClass('top-hide');
+            //fix bug with lazy xt (after scroll images not show - maybe translate3d for top and bottom sections problem - but show on resize - wtf i don't know)
+            setInterval(function () {
+                $(window).trigger('resize');
+            }, 50);
         }, 800);
     },
     init: function () {
-        var isScrolled = false,
-            self = this;
+        var self = this;
 
         $('.touch-nav').on('touchstart', function () {
             self.hideIntro();
@@ -19,11 +22,8 @@ APP.Effects.sectionSlider = ({
             self.hideIntro();
         });
 
-        $('.top').on('mousewheel DOMMouseScroll', function () {
-            if(!isScrolled) {
-                self.hideIntro();
-                return false;
-            }
+        $('.top').one('mousewheel DOMMouseScroll', function () {
+            self.hideIntro();
         });
     }
 }).init();

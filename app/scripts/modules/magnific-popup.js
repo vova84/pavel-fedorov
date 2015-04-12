@@ -120,7 +120,13 @@ APP.Effects.magnific = ({
                     },
                     buildControls: function() {
                         // re-appends controls inside the main container
-                        this.contentContainer.find('.mfp-bottom-bar .mfp-close').before(this.arrowLeft.add(this.arrowRight));
+                        console.log($.magnificPopup.instance.items.length);
+                        if($.magnificPopup.instance.items.length > 1){
+                            this.contentContainer.find('.mfp-bottom-bar .mfp-close').before(this.arrowLeft.add(this.arrowRight));
+                        }else{
+                            this.contentContainer.find('.mfp-bottom-bar .mfp-close').before('<div class="empty-arrow"></div>');
+                        }
+
                     }
 
                 }
