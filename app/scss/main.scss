@@ -160,13 +160,18 @@
   position: fixed;
 }
 .bottom-inner{
-  padding: 0 20px;
   position: relative;
   width: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   max-height: 100vh;
+}
+
+.bottom-wrap{
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .top-hide{
@@ -521,10 +526,7 @@
 }
 /* FROM 1200 */
 @include breakpoint(large){
-  .bottom-inner{
-    max-width: 1200px;
-    margin: auto;
-  }
+
   .category {
     justify-content: space-around;
     position: relative;
