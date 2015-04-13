@@ -48,6 +48,8 @@ APP.Effects.magnific = ({
                 tClose: '',
                 tLoading: '<img src="images/logo.png">',
                 closeMarkup: '',
+                fixedContentPos:true,
+                closeOnBgClick: false,
                 items: {
                     src: '<div class="btn-inline-holder"><div class="container"><div class="col-20 inline"><div class="mfp-top-sign">'+ dataSign.bottomSign.text() + '</div><div class="mfp-bottom-sign">' + dataSign.topSign.text() + '</div></div><button class="mfp-close col-4 inline last"></button></div></div><div class="container"><ul class="row gallery-inner gallery-inline-holder text-center">' + current_thumb_gallery + '</ul></div>'
                 },
@@ -95,6 +97,7 @@ APP.Effects.magnific = ({
                 delegate: 'a',
                 tClose: '',
                 type: 'image',
+                fixedContentPos:true,
                 tLoading: '<img src="images/logo.png">',
                 closeMarkup: '<button title="%title%" class="mfp-close"></button>',
                 image: {
