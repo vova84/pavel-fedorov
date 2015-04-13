@@ -3,11 +3,12 @@
 APP.Effects.sectionSlider = ({
     switcher: $('#slider-block-arrow'),
     hideIntro: function () {
+        var win = $(window);
         setTimeout(function () {
             $('body').addClass('top-hide');
             //fix bug with lazy xt (after scroll images not show - maybe translate3d for top and bottom sections problem - but show on resize - wtf i don't know)
             setInterval(function () {
-                $(window).trigger('resize');
+                win.trigger('resize');
             }, 50);
         }, 800);
     },

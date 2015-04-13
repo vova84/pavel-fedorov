@@ -29,6 +29,12 @@ APP.Effects.magnific = ({
     },
     viewThumbs: function (galleryItem, modalContainer, dataSign) {
 
+        galleryItem.find('.gallery-inner a').each(function () {
+            var $this = $(this);
+            $this.empty();
+            $this.append('<img src="'+$this.data('thumb')+'" />');
+        });
+
         var current_thumb_gallery = galleryItem.find('.gallery-inner').html();
 
         modalContainer.find('.thumb-link').on("click", function(e){
@@ -120,7 +126,7 @@ APP.Effects.magnific = ({
                     },
                     buildControls: function() {
                         // re-appends controls inside the main container
-                        console.log($.magnificPopup.instance.items.length);
+
                         if($.magnificPopup.instance.items.length > 1){
                             this.contentContainer.find('.mfp-bottom-bar .mfp-close').before(this.arrowLeft.add(this.arrowRight));
                         }else{

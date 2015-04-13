@@ -40,6 +40,20 @@
 #mixContainer .mix{
   display: none;
 }
+.mfp-inline-holder .gallery-inner{
+  text-align: justify;
+  &>li{
+    float: none;
+    display: inline-block;
+    margin-right: 0;
+    text-align: center;
+  }
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
 .category-view{
   text-align: justify;
   margin-top: 20px;
@@ -166,7 +180,7 @@
   }
 }
 .nav-block{
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 
@@ -306,7 +320,7 @@
   display: inline-block;
   transition: all .7s ease;
   top: 0;
-  bottom: 0;
+  bottom: 2px;
   left: 0;
   right: 0;
   background: #000;
@@ -483,7 +497,7 @@
     display: inline-block;
   }
   .category-view{
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: none;
     &>div{
       margin-bottom: 0.64034%;
